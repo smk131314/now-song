@@ -1,0 +1,59 @@
+
+/* .player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.player .playerImg {
+  
+}
+.player .playerImg img {
+    width: var(--vinyl-large);
+    height: var(--vinyl-large);
+} */
+/* .infoAndBtn {
+    display: flex;
+    justify-content: space-between;
+}
+.infoAndBtn .info {
+    display: flex;
+    flex-direction: column;
+}
+.infoAndBtn .info .artistName {
+    font-size: var(--font-small);
+}
+.infoAndBtn .info .musicTitle {
+    font-size: var(--font-regular);
+    font-weight: bold;
+}
+.infoAndBtn .Btn button {
+    font-size: var(--font-regular);
+    color: var(--grey-light-color);
+}
+.playerBar span {
+    color: var(--grey-dark-color);
+    font-size: var(--font-micro);
+}
+.player .playerBar .progressBar {
+    height: 2px;
+    width: 100%;
+    position: relative;
+    border-radius: 2px;
+    background-color: var(--grey-dark-color);
+}
+.player .playerBar .progressBar .bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: red;
+    width: 30%;
+    transition: all .2s ease;
+}
+.player .playControls button {
+    padding: var(--spacing);
+    color: var(--grey-light-color);
+    font-size: var(--font-large);
+} */

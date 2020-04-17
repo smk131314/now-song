@@ -1,0 +1,223 @@
+
+:root {
+    /* Color */
+    --white-color: #fcfefc;
+    --black-color: ##0f0a20;
+    --grey-light-color: #f5f5f6;
+    --grey-dark-color: #e1e2e1;
+
+    /* Gradient color */
+    --JShine-1: #12c2e9;
+    --JShine-2: #c471ed;
+    --JShine-3: #f64f59;
+    --Amin-1: #8E2DE2;
+    --Amin-2: #4A00E0;
+
+    /* Size */
+    --spacing: 12px;
+    --spacing-largest: 40px;
+    --spacing-large: 24px;
+    --spacing-small: 6px;
+    --avatar-size: 36px;
+    --vinyl-large: 100px;
+
+    /* Box size */
+    --w-box: 20vw;
+    --p-box: 60vw;
+    --n-box: 20vw;
+
+    /* Font Size */
+    --font-largest: 30px;
+    --font-large: 20px;
+    --font-regular: 16px;
+    --font-medium: 14px;
+    --font-small: 12px;
+    --font-micro: 10px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'Noto Sans KR',sans-serif;
+
+    background: linear-gradient(-45deg, var(--JShine-1), var(--JShine-2), 
+    var(--JShine-3), var(--Amin-2));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: white;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+    }
+}
+
+button,
+button:focus {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--spacing);
+}
+
+header .titleAndBtn {
+    font-size: var(--font-large);
+}
+
+header .titleAndBtn .fa-bars {
+    margin-right: var(--spacing);
+}
+
+header .icons {
+    align-items: center;
+}
+
+header .icons .fa-search {
+    margin-right: var(--spacing);
+}
+
+header .icons .fa-sign-in-alt {
+    font-size: var(--font-regular);
+}
+
+main {
+    display: flex;
+}
+
+/* Weather Info */
+.weatherInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-left: var(--spacing-largest);
+}
+.weatherInfo .textContent {
+    font-size: var(--font-largest);
+}
+.weatherInfo .weatherData {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.weatherInfo .timeData {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Music Player */
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.player .playerImg {
+    /* position: relative; */
+}
+.player .playerImg img {
+    width: var(--vinyl-large);
+    height: var(--vinyl-large);
+    /* position: absolute; */
+}
+.infoAndBtn {
+    display: flex;
+    justify-content: space-between;
+}
+.infoAndBtn .info {
+    display: flex;
+    flex-direction: column;
+}
+.infoAndBtn .info .artistName {
+    font-size: var(--font-small);
+}
+.infoAndBtn .info .musicTitle {
+    font-size: var(--font-regular);
+    font-weight: bold;
+}
+.infoAndBtn .Btn button {
+    font-size: var(--font-regular);
+    color: var(--grey-light-color);
+}
+.playerBar span {
+    color: var(--grey-dark-color);
+    font-size: var(--font-micro);
+}
+.player .playerBar .progressBar {
+    height: 2px;
+    width: 100%;
+    position: relative;
+    border-radius: 2px;
+    background-color: var(--grey-dark-color);
+}
+.player .playerBar .progressBar .bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: red;
+    width: 30%;
+    transition: all .2s ease;
+}
+.player .playControls button {
+    padding: var(--spacing);
+    color: var(--grey-light-color);
+    font-size: var(--font-large);
+}
+
+
+/* Up Next */
+.upNext {
+}
+.upNext .curAlbum img, .upNext .nextAlbum {
+    width: var(--vinyl-large);
+    height: var(--vinyl-large);
+}
+
+
+/*  For samll screen */
+@media screen and (max-width: 768px) {
+    .upNext {
+        display: none;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+/* @font-face {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    src: local('Roboto');
+}
+
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: local('Noto Sans KR');
+    unicode-range: U+AC00–D7AF;
+    font-style: normal;
+} */
