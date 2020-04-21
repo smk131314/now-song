@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import classNames from "classnames/bind";
 import styles from "./Header.module.css";
 
-import {GoThreeBars} from 'react-icons/go'
-import {IoMdSearch} from 'react-icons/io'
-import {FiLogIn} from 'react-icons/fi'
+import {GoThreeBars} from 'react-icons/go';
+import {IoMdSearch} from 'react-icons/io';
+import {FiLogIn} from 'react-icons/fi';
 
 
 const cx = classNames.bind(styles);

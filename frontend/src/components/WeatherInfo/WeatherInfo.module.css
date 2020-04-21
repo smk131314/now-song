@@ -9,6 +9,9 @@
     align-items: flex-start;
 
     height: 100%;
+
+    /* test용 */
+    background-color: black;
 }
 .weatherInfo .textContent {
     margin: 30px 0;

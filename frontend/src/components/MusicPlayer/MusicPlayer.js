@@ -1,41 +1,47 @@
 import React from "react";
 import styles from "./MusicPlayer.module.css";
 import classNames from "classnames/bind";
-import WeatherInfo from "../WeatherInfo/WeatherInfo";
+
+import { FaRegHeart, FaPlus, FaChevronLeft, FaChevronRight, FaPlay } from 'react-icons/fa';
+import albumcover from '../img/albumcover.jpg';
+import vinyl from '../img/vinyl.png';
 
 const cx = classNames.bind(styles);
 
+
 const MusicPlayer = () => {
     return (
-        // <section class="player">
-        //     <div class="playerImg">
-        //         <img class="album-art" src="img/albumcover.jpg" alt="album cover image">
-        //         <img class="vinyl" src="img/vinyl.png" alt="vinyl image">
-        //     </div>
-        //     <div class="infoAndBtn">
-        //         <div class="info">
-        //             <span class="artistName">Dua Lipa</span>
-        //             <span class="musicTitle">Break My Heart</span>
-        //         </div>
-        //         <div class="Btn">
-        //             <button><i class="fas fa-plus"></i></button>
-        //             <button><i class="far fa-heart"></i></button>
-        //         </div>
-        //     </div>
-        //     <div class="playerBar">
-        //         <span class="cur-time">1:32</span>
-        //         <span class="length">3:45</span>
-        //         <div class="progressBar">
-        //             <div class="bar"></div>
-        //         </div>
-        //     </div>
-        //     <div class="playControls">
-        //         <button class="play-prev"><i class="fas fa-chevron-left"></i></button>
-        //         <button class="play-and-pause"><i class="fas fa-play"></i></button>
-        //         <button class="play-next"><i class="fas fa-chevron-right"></i></button>
-        //     </div>
-        // </section>
+        <section className = {cx("player")}>
+            <div className = {cx("playerImg")}>
+                <img className = {cx("album-art")} src={albumcover} alt="album cover image"/>
+                <div className = {cx("vinyl")}></div>
+            </div>
+            <div className = {cx("infoAndBtn")}>
+                <div className = {cx("info")}>
+                    <span className = {cx("artistName")}>Dua Lipa</span>
+                    <span className = {cx("musicTitle")}>Break My Heart</span>
+                </div>
+                <div className = {cx("Btn")}>
+                    <button className = {cx("Btn-plus")}><FaPlus /></button>
+                    <button className = {cx("Btn-heart")}><FaRegHeart /></button>
+                </div>
+            </div>
+            <div className = {cx("playerBar")}>
+                <div className = {cx("playTime")}>
+                    <span className = {cx("cur-time")}>1:32</span>
+                    <span className = {cx("length")}>3:45</span>
+                </div>                
+                <div className = {cx("progressBar")}>
+                    <div className = {cx("bar")}></div>
+                </div>
+            </div>
+            <div className = {cx("playControls")}>
+                <button className = {cx("play-prev")}><FaChevronLeft /></button>
+                <button className = {cx("play-and-pause")}><FaPlay /></button>
+                <button className = {cx("play-next")}><FaChevronRight /></button>
+            </div>
+        </section>
     );
 };
 
-export default WeatherInfo;
+export default MusicPlayer;

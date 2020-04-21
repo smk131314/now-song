@@ -1,8 +1,7 @@
 /* 레이아웃 템플릿 */
-.weather-info-wrapper {
-    /* margin: 0 auto; */
-    margin-left: 40px;
-    width: 25%;
+.music-player-wrapper {
+    margin: 0;
+    width: 50%;
   /* @media screen and (max-width: 768px) {
     width: 95%;
   } */
