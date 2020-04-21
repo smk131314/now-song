@@ -1,19 +1,46 @@
 .weatherInfo {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    padding-left: 40px;
+
+    height: 100%;
 }
 .weatherInfo .textContent {
+    margin: 30px 0;
     font-size: 30px;
 }
 .weatherInfo .weatherData {
+    margin: 40px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+.weatherInfo .weatherData .location {
+    font-size: small;
+}
+.weatherInfo .weatherData .temp {
+    font-size: xx-large;
+    font-weight: bold;
+}
+.weatherInfo .weatherData .cast {
+    font-size: large;
+    font-weight: bold;
+}
 .weatherInfo .timeData {
+    margin: 30px 0;
     display: flex;
     flex-direction: column;
+}
+.weatherInfo .timeData .week {
+    font-size: smaller;
+    font-weight: light;
+}
+.weatherInfo .timeData .time {
+    font-size: small;
+    margin-top: 20px;
 }
