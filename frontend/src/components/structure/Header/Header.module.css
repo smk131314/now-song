@@ -71,6 +71,14 @@
 	color: var(--white-color);
 }
 
+button,
+button:focus {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+}
+
 
 .header {
 	display: flex;
@@ -88,16 +96,32 @@ header .titleAndBtn .bar {
     margin-right: var(--spacing);
 }
 
-header .icons {
+header .icons, header .icons .search {
 	display: flex;
 	align-items: center;
-	font-size: var(--font-large);
 }
-
-header .icons .search {
-    margin-right: var(--spacing);
+header .icons button, header .icons .search .seachBtn {
+    font-size: var(--font-large);
 }
 
 header .icons .login {
-	font-size: var(--font-regular);
+    font-size: var(--font-regular);
+    margin-left: var(--spacing);
+}
+header .icons .search .searchBtn {
+    margin-left: 10px;
+}
+header .icons .search .searchBtn :hover {
+    color: var(--grey-dark-color);
+}
+header .icons .search .searchInput {
+    width: 250px;
+    height: 25px;
+    background-color: var(--white-color);
+    opacity: 0.7;
+    border-radius: 25px;
+    border: none;
+} 
+header .icons .search .searchInput:focus {
+    outline: none;
 }
