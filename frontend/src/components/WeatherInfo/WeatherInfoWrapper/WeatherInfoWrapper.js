@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import styles from "./WeatherInfoWrapper.module.css";
 import classNames from "classnames/bind";
 
@@ -9,3 +9,5 @@ const WeatherInfoWrapper = ({children}) =>(
 );
 
 export default WeatherInfoWrapper;
+
+

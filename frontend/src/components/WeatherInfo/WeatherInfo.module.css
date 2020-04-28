@@ -12,6 +12,7 @@
 
     /* test용 */
     background-color: black;
+    border-radius: 50px;
 }
 .weatherInfo .textContent {
     margin: 30px 0;

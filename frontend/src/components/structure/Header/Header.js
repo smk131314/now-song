@@ -46,9 +46,13 @@ class Header extends Component {
     return (
       <header className={cx("header")}>
         <div className={cx("titleAndBtn")}>
-            <GoThreeBars className={cx("bar")} onClick={this.toggleSearch}/>
-            <span className={cx("title")}>Now song</span>
+          {this.state.isNavClicked ? <Nav /> : null}
+          <button className={cx("navBtn")} onClick={this.toggleNav}>
+            <GoThreeBars />
+          </button>
+          <span className={cx("title")}>Now song</span>
         </div>
+
         <div className={cx("icons")}>
             <div className={cx("search")} >
               <SearchInput isSearchClicked={this.state.isSearchClicked} />
@@ -70,24 +74,17 @@ const SearchInput = ({ isSearchClicked }) => (
 );
 
 
-/* Nav 컴포넌트 수정하기/ css 구현하기
 const Nav = ({ isNavClicked }) => (
-  if ( isNavClicked ) {
-    return (
-      <div className={cx("NavBox")>
-        <ul className={cx("NavList")>
-          <li>- HOME</li>
-          <li>- DISCOVER</li>
-          <li>- PLAYLIST</li>
-          <li>- LIKES</li>
-        </ul>
-      </div>
-  );
-
-  }
-
+  <div className={cx("NavBox")}>
+    <ul className={cx("NavList")}>
+      <li>- HOME</li>
+      <li>- DISCOVER</li>
+      <li>- PLAYLIST</li>
+      <li>- LIKES</li>
+    </ul>
+  </div> 
 );
-*/
+
 
 // const Header = () => {
 

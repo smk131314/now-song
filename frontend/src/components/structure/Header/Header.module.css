@@ -70,7 +70,9 @@
 	background-color:var(--JShine-2);   
 	color: var(--white-color);
 }
-
+ul {
+    list-style: none;
+}
 button,
 button:focus {
     border: none;
@@ -78,24 +80,29 @@ button:focus {
     outline: none;
     background-color: transparent;
 }
-
-
 .header {
 	display: flex;
     justify-content: space-between;
     padding: var(--spacing);
 }
+/* Nav Box */
+.titleAndBtn .NavBox {
+    background-color: black;
+}
 
+/* Header Title and navBtn */
 header .titleAndBtn {
 	font-size: var(--font-large);
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 }
 
-header .titleAndBtn .bar {
+header .titleAndBtn .navBtn {
     margin-right: var(--spacing);
 }
-
+header .titleAndBtn .navBtn :hover {
+    color: var(--grey-dark-color);
+}
 header .icons, header .icons .search {
 	display: flex;
 	align-items: center;

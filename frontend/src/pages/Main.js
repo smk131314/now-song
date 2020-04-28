@@ -7,16 +7,16 @@ import WeatherInfoWrapper from "../components/WeatherInfo/WeatherInfoWrapper";
 import MusicPlayer from "../components/MusicPlayer/MusicPlayer"
 import UpNext from "../components/UpNext/UpNext";
 import MusicPlayerWrapper from "../components/MusicPlayer/MusicPlayerWrapper/MusicPlayerWrapper";
+import WeatherContainer from "../containers/weather/WeatherContainer";
+import { MusicPlayerContainer } from "../containers/MusicPlayerContainer";
 
 const Main = () => {
     return (
     <MainStructure>
         <WeatherInfoWrapper>
-            <WeatherInfo />
+            <WeatherContainer/>
         </WeatherInfoWrapper>
-        <MusicPlayerWrapper>
-            <MusicPlayer/>
-        </MusicPlayerWrapper>
+        <MusicPlayerContainer/>
         <UpNext />
     </MainStructure>);
 };
