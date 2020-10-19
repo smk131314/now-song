@@ -18,3 +18,8 @@
 - 플레이 리스트 공유
 - 플레이리스트 좋아요
 - 사용자 팔로우
+
+
+## 레이아웃 초안
+![demo](https://user-images.githubusercontent.com/57065379/96479219-99743180-1273-11eb-8b3c-f91b814ef2d8.jpg)
+<img src="https://user-images.githubusercontent.com/57065379/96479229-9d07b880-1273-11eb-8d67-c8348bb74a88.jpg" width="40%">
